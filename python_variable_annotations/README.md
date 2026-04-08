@@ -1,0 +1,1 @@
+Duck typing in python
