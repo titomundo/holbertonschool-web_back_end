@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""0-add.py
+Make a function that adds two floats and returns the sum as a float
+"""
+
 
 def add(a: float, b: float) -> float:
     """Sums two floats
