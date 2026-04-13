@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-import asyncio
-from random import uniform
-
 """0-basic_async_syntax:
 Demostration of an async function using sleep"""
+
+import asyncio
+from random import uniform
 
 
 async def wait_random(max_delay: int = 10) -> float:
