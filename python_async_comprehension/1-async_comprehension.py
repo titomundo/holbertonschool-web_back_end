@@ -5,10 +5,12 @@
 Use async comprehension to extract values to iterables
 """
 
+from typing import List
+
 async_generator = __import__("0-async_generator").async_generator
 
 
-async def async_comprehension():
+async def async_comprehension() -> List[float]:
     """
     Gets 10 random numbers using async_generator
 
