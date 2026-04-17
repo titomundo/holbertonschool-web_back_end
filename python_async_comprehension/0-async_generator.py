@@ -6,9 +6,10 @@ Create a coroutine that generates random numbers each second
 
 import asyncio
 import random
+from typing import AsyncGenerator
 
 
-async def async_generator():
+async def async_generator() -> AsyncGenerator[float]:
     """
     Yields random numbers from 0 to 10 every second
     """
