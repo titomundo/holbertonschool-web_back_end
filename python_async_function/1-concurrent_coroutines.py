@@ -5,6 +5,7 @@ Create many async calls
 """
 
 from typing import List
+import asyncio
 
 wait_random = __import__("0-basic_async_syntax").wait_random
 
@@ -19,10 +20,8 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     Returns:
     list[float]: sorted list of all delays
     """
-    delays = []
-    for i in range(n):
-        delay = await wait_random(max_delay)
-        delays.append(delay)
+    tasks = [wait_random(max_delay) for i in range(n)]
+    delays = await asyncio.gather(*tasks)
 
     for i in range(len(delays)):
         for j in range(i + 1, len(delays)):
