@@ -51,8 +51,8 @@ class Server:
         Returns:
         List[List]: list of fetch values, empty list if out of range parameters
         """
-        assert isinstance(page, int) and isinstance(page_size, int)
-        assert page > 0 and page_size > 0
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) and page_size > 0
 
         data = self.dataset()
         idx = index_range(page, page_size)
