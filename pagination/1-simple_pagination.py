@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+1-simple_pagination:
+Get a range of entries from a dataset using pagination
+"""
+
 import csv
 import math
 from typing import List, Tuple
