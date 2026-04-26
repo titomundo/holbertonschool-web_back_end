@@ -1,2 +1,2 @@
 // 7-delete: Delete an element using filters
-db.school.remove({name: "Holberton school"})
+db.school.deleteMany({name: "Holberton school"})
