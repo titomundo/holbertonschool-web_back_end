@@ -1,0 +1,2 @@
+// 4-match: Get al documents in a collection matching a name
+db.school.find({name: "Holberton school"})
