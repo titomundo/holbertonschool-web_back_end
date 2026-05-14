@@ -13,6 +13,6 @@ rl.question(
   },
 );
 
-process.on('exit', () => {
+rl.on('close', () => {
   console.log('This important software is now closing');
 });
