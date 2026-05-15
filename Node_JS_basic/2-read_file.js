@@ -34,7 +34,7 @@ function countStudents(path) {
         + `List: ${degree[1].join(', ')}`);
     });
   } catch (err) {
-    throw (err('Cannot load the database'));
+    throw new Error('Cannot load the database');
   }
 }
 
